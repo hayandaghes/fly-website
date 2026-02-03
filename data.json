@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": "",
+      "arlinename": "محمد كبسه",
+      "namecity": "دمشق",
+      "citycodename": "DUM",
+      "direction": "دبي الشارئه",
+      "directioncode": "DUB",
+      "date": "",
+      "daraga": "درجة رجال الأعمال",
+      "daysfly": "أحد ,الاثنين ,الثلاثاء",
+      "pricego": "200",
+      "priceback": "350",
+      "logo": "1770060675625-694098792.webp",
+      "img": "1770060679483-172734897.webp"
+    },
+    {
+      "id": "",
+      "arlinename": "فلاي شام",
+      "namecity": "دمشق",
+      "citycodename": "DUM",
+      "direction": "دبي",
+      "directioncode": "DUB",
+      "date": "",
+      "daraga": "إقتصادية",
+      "daysfly": "أحد والاثنين والثلاثاء",
+      "pricego": "200",
+      "priceback": "350",
+      "logo": "1770044855909-335868539.webp",
+      "img": "1770044860188-344712290.webp"
+    }
+  ]
+}

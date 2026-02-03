@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <div class="navbardiv">
+        <div class="navcontainer">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="company-name">
+                Almithaq Travel & Tourism
+            </div>
+            <div class="nav-logo">
+                <img src="almithaq-logo-removebg-preview.webp" alt="Almithaq Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Almithaq</span>
+                    <span class="logo-subtitle-ar">للرحلات السياحية</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="navbar" onclick="color(this)">الرئيسية</a>
+                <a href="book.html" class="navbar" onclick="color(this)">التذاكر</a>
+                <a href="sevices.html" class="navbar" onclick="color(this)">خدماتنا</a>
+                <a href="news.html" class="navbar" onclick="color(this)">الأخبار</a>
+                <a href="uss.html" class="navbar" onclick="color(this)">من نحن</a>
+                <a href="contact.html" class="navbar" onclick="color(this)">تواصل معنا</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="maincontain">
+
+
+      <!-- العنوان الرئيسي المحسن -->
+      <div class="hero-content">
+     
+        <h1 id="home-title" class="hero-title">
+          <span class="hero-welcome">مرحباً بكم في</span>
+          <span class="hero-brand-block">
+            <span class="hero-brand">ALMITHAQ</span>
+          </span>
+          <span class="hero-desc-sub">للطيران والسياحة</span>
+        </h1>
+        
+        <p class="hero-description animate-fade-in-delay-2">
+          نقدم لكم تجربة طيران استثنائية تجمع بين الأمان والراحة والتميز. 
+          نحن شركاؤكم الموثوقون في رحلاتكم حول العالم.
+        </p>
+          
+        
+        <!-- أزرار العمل المحسنة -->
+        <div class="hero-actions">
+          <button class="btn-primary animate-bounce-in" onclick="showSection('memories')">
+            <i class="fa-solid fa-ticket"></i>
+            <span>احجز تذكرتك</span>
+            <div class="btn-glow"></div>
+          </button>
+          <button class="btn-secondary animate-bounce-in-delay" onclick="showSection('services')">
+            <i class="fa-solid fa-list"></i>
+            <span>خدماتنا</span>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+<!-- إحصائيات سريعة محسنة -->
+<div class="hero-stats">
+    <div class="stat-item animate-counter">
+        <div class="stat-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+        </div>
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label">رحلة شهرياً</div>
+        <div class="stat-glow"></div>
+    </div>
+    <div class="stat-item animate-counter">
+        <div class="stat-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">وجهة حول العالم</div>
+        <div class="stat-glow"></div>
+    </div>
+    <div class="stat-item animate-counter">
+        <div class="stat-icon">
+            <i class="fa-solid fa-calendar-days"></i>
+        </div>
+        <div class="stat-number" data-target="20">0</div>
+        <div class="stat-label">سنة خبرة</div>
+        <div class="stat-glow"></div>
+    </div>
+    <div class="stat-item animate-counter">
+        <div class="stat-icon">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="stat-number" data-target="99">0</div>
+        <div class="stat-label">رضا العملاء</div>
+        <div class="stat-glow"></div>
+    </div>
+</div>
+      </div>
+
+
+      <!-- تذاكر متحركة متطورة -->
+      <div class="tickets-carousel">
+        <div class="carousel-header">
+          <h3 class="carousel-title">
+            <i class="fa-solid fa-plane-departure"></i>
+            عروض التذاكر
+          </h3>
+          <div class="carousel-indicators" id="ticketIndicators">
+            <!-- المؤشرات ستُضاف ديناميكياً -->
+          </div>
+        </div>
+        
+        <div class="tickets-container">
+          <div class="tickets-track" id="ticketsTrack">
+            <!-- التذاكر ستُضاف ديناميكياً من JavaScript -->
+          </div>
+          <div class="tickets-gradient-left"></div>
+          <div class="tickets-gradient-right"></div>
+        </div>
+        
+        <div class="carousel-controls">
+              <button class="carousel-btn next" onclick="moveTickets('next')">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="carousel-btn prev" onclick="moveTickets('prev')">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+
+      </div>
+
+     
+      <!-- مقتطف من من نحن المحسن -->
+      <div class="about-preview">
+        <div class="about-content">
+          <div class="about-header">
+            <h3 class="preview-title">
+              <i class="fa-solid fa-building"></i>
+              من نحن
+            </h3>
+           
+          </div>
+          
+          <p class="about-text">
+            في قلب عالم الطيران المتغير، تبرز <strong>ALMITHAQ للطيران</strong> كشريك موثوق يحاكي أعلى معايير الاحترافية والدقة. 
+            نحن أكثر من مجرد شركة طيران نحن مرجع عالمي يجمع بين الرؤية الطموحة والتفاني في تقديم تجربة متكاملة...
+          </p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <i class="fa-solid fa-lock"></i>
+              <span>أمان مضمون</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>دقة في المواعيد</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-heart"></i>
+              <span>خدمة متميزة</span>
+            </div>
+          </div>
+          
+          <button class="learn-more-btn" onclick="showSection('about')">
+            <span>تعرف علينا أكثر</span>
+            <i class="fa-solid fa-arrow-left"></i>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+       
+       
+        
+        </div>
+          
+      <!-- مقتطف من التواصل المحسن -->
+      <div class="contact-preview">
+  <div class="contact-header">
+    <h3 class="preview-title">
+      <i class="fa-solid fa-phone"></i> تواصل معنا
+    </h3>
+    <div class="contact-badge">
+      <i class="fa-solid fa-headset"></i> <span>خدمة 24/7</span>
+    </div>
+    <p>نحن هنا لخدمتكم دائماً. يمكنكم التواصل معنا عبر أي من وسائل الاتصال التالية، وسيقوم فريقنا بالرد عليكم بأسرع وقت ممكن.</p>
+  </div>
+
+  <div class="contact-info">
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+      <div class="contact-details"><strong>الهاتف:</strong> <span>0119938</span></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fa-solid fa-mobile"></i></div>
+      <div class="contact-details"><strong>المحمول:</strong> <span>0940033319</span></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+      <div class="contact-details"><strong>الإيميل:</strong> <span>mithaqtravel@gmail.com</span></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+      <div class="contact-details"><strong>صندوق البريد:</strong> <span>11229</span></div>
+    </div>
+  </div>
+
+  <div class="contact-actions">
+    <button class="contact-btn primary" onclick="showSection('contact')">
+      <i class="fa-solid fa-comments"></i>
+      <span>تواصل معنا الآن</span>
+      <div class="btn-glow"></div>
+    </button>
+  </div>
+</div>
+    </div>
+    
+<center>
+
+        
+    </div>
+    <script src="scripte.js"></script>
+</body>
+</html>
