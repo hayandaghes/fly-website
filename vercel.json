@@ -6,11 +6,10 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/admin/(.*)",
-      "dest": "https://your-admin-panel-url.railway.app/admin/$1",
-      "methods": ["GET", "POST", "PUT", "DELETE"]
+      "source": "/admin/(.*)",
+      "destination": "https://your-admin-panel-url.railway.app/admin/$1"
     }
   ],
   "headers": [
@@ -31,8 +30,5 @@
         }
       ]
     }
-  ],
-  "github": {
-    "silent": true
-  }
+  ]
 }
